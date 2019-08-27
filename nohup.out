@@ -1,0 +1,257 @@
+I0816 14:41:11.589825  1589 canbus.cc:49] [INFO] The canbus conf file is loaded: modules/canbus/conf/canbus_conf.pb.txt
+I0816 14:41:11.590221  1589 canbus.cc:50] [INFO] Canbus_conf:vehicle_parameter { brand: ctrek max_steer_angle: 470 max_steer_angle_spd: 500 min_steer_angle_spd: 100 max_acc: 5 min_acc: -5 max_brake_pressure: 7 max_enable_fail_attempt: 5 driving_mode: COMPLETE_AUTO_DRIVE } can_card_parameter { brand: usb_CAN type: USB_CARD channel_id: CHANNEL_ID_ZERO } enable_debug_mode: true enable_receiver_log: true enable_sender_log: true
+I0816 14:41:11.590252  1589 canbus.cc:59] [INFO] Can client is successfully created.
+I0816 14:41:11.590304  1589 vehicle_factory.cc:43] [INFO] create vehicle factor withbrand: ctrek
+max_steer_angle: 470
+max_steer_angle_spd: 500
+min_steer_angle_spd: 100
+max_acc: 5
+min_acc: -5
+max_brake_pressure: 7
+max_enable_fail_attempt: 5
+driving_mode: COMPLETE_AUTO_DRIVE
+I0816 14:41:11.590363  1589 canbus.cc:73] [INFO] Message manager is successfully created.
+I0816 14:41:11.590375  1589 canbus.cc:79] [INFO] The can receiver is successfully initialized.
+I0816 14:41:11.590384  1589 canbus.cc:85] [INFO] The can sender is successfully initialized.
+I0816 14:41:11.590395  1589 canbus.cc:91] [INFO] The vehicle controller is successfully created.
+W0816 14:41:11.590410  1589 can_sender.cc:74] sender message updata id532data
+I0816 14:41:11.590598  1589 can_sender.cc:158] [INFO] Add send message:214
+W0816 14:41:11.590611  1589 can_sender.cc:74] sender message updata id534data
+I0816 14:41:11.590626  1589 can_sender.cc:158] [INFO] Add send message:216
+W0816 14:41:11.590634  1589 can_sender.cc:74] sender message updata id533data
+I0816 14:41:11.590646  1589 can_sender.cc:158] [INFO] Add send message:215
+W0816 14:41:11.590654  1589 can_sender.cc:74] sender message updata id535data
+I0816 14:41:11.590665  1589 can_sender.cc:158] [INFO] Add send message:217
+W0816 14:41:11.590673  1589 can_sender.cc:74] sender message updata id536data
+I0816 14:41:11.590685  1589 can_sender.cc:158] [INFO] Add send message:218
+I0816 14:41:11.590693  1589 ctrek_controller.cc:108] [INFO] Controller is initialized.
+I0816 14:41:11.590701  1589 canbus.cc:97] [INFO] The vehicle controller is successfully initialized.
+I0816 14:41:11.591228  1589 adapter_manager.cc:42] [INFO] Init AdapterManger config:config {
+  type: CONTROL_COMMAND
+  mode: RECEIVE_ONLY
+  message_history_limit: 10
+}
+config {
+  type: CHASSIS
+  mode: PUBLISH_ONLY
+  message_history_limit: 10
+}
+config {
+  type: CHASSIS_DETAIL
+  mode: PUBLISH_ONLY
+}
+config {
+  type: MONITOR
+  mode: PUBLISH_ONLY
+}
+is_ros: true
+I0816 14:41:11.600365  1589 canbus.cc:101] [INFO] The adapter manager is successfully initialized.
+I0816 14:41:11.600834  1589 restful_client.cc:36] [INFO] Put proto message to http://127.0.0.1:8887/runtime_status_api:
+modules {
+  name: "canbus"
+  status: INITIALIZED
+}
+E0816 14:41:11.602535  1589 restful_client.cc:52] RuntimeError: Failed to connect to 127.0.0.1 port 8887: Connection refused
+I0816 14:41:12.158974  1589 usb_can_client.cc:51] [INFO] >>USBCAN DEVICE NUM:0
+E0816 14:41:12.610991  1589 usb_can_client.cc:55] open usb_can error
+WARNING: cannot create log directory [/home/qwe/.ros/log/a3472edc-c225-11e9-bfa5-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+[31mroscore cannot run as another roscore/master is already running. 
+Please kill other roscore/master processes before relaunching.
+The ROS_MASTER_URI is http://in_dev_docker:11311/[0m
+[31mThe traceback for the exception was written to the log file[0m
+... logging to /home/qwe/.ros/log/a3472edc-c225-11e9-bfa5-02422f44c13d/roslaunch-in_dev_docker-3152.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://in_dev_docker:40746/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+[31mroscore cannot run as another roscore/master is already running. 
+Please kill other roscore/master processes before relaunching.
+The ROS_MASTER_URI is http://in_dev_docker:11311/[0m
+[31mThe traceback for the exception was written to the log file[0m
+... logging to /home/qwe/.ros/log/a3472edc-c225-11e9-bfa5-02422f44c13d/roslaunch-in_dev_docker-3177.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://in_dev_docker:38319/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+WARNING: cannot create log directory [/home/qwe/.ros/log/53ea08de-c228-11e9-8e31-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/b458c862-c233-11e9-8b65-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/e2d78ba2-c237-11e9-a145-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/689fe838-c238-11e9-8fb6-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/a00bc0f4-c23c-11e9-beb4-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/9d8b0904-c23f-11e9-9f02-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/c6e0c8f0-c241-11e9-9a20-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/6bbc79b4-c242-11e9-93e0-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+Traceback (most recent call last):
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/bin/roscore", line 36, in <module>
+    from rosmaster.master_api import NUM_WORKERS
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rosmaster/__init__.py", line 35, in <module>
+    from .main import rosmaster_main
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rosmaster/main.py", line 43, in <module>
+    import rosmaster.master
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rosmaster/master.py", line 45, in <module>
+    import rosgraph.xmlrpc
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rosgraph/__init__.py", line 36, in <module>
+    from . masterapi import Master, MasterFailure, MasterError, MasterException
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rosgraph/masterapi.py", line 49, in <module>
+    from rospy.impl.broadcast_manager import BroadcastManager
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rospy/__init__.py", line 49, in <module>
+    from .client import spin, myargv, init_node, \
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rospy/client.py", line 60, in <module>
+    import rospy.impl.init
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rospy/impl/init.py", line 54, in <module>
+    from .tcpros import init_tcpros
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rospy/impl/tcpros.py", line 45, in <module>
+    import rospy.impl.tcpros_service
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 53, in <module>
+    from rospy.impl.tcpros_base import TCPROSTransport, TCPROSTransportProtocol, \
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 61, in <module>
+    from rospy.msg import deserialize_messages, serialize_message
+  File "/home/qwe/apollo-r1.0.0/third_party/ros/lib/python2.7/dist-packages/rospy/msg.py", line 48, in <module>
+    import google.protobuf.message
+ImportError: No module named google.protobuf.message
+WARNING: cannot create log directory [/home/qwe/.ros/log/8f6a9e48-c244-11e9-b236-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/f50a2a5a-c246-11e9-ba8e-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/7ddeddde-c248-11e9-92c5-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/e0bd161c-c24a-11e9-b032-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/d2d1255a-c24c-11e9-b26f-02422f44c13d]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/6b49d25e-c7bc-11e9-9470-28c2dd9b2713]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/07f42388-c7cd-11e9-8030-02423760b3e7]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/650a5df8-c7cd-11e9-a31d-02423760b3e7]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/f2f76b86-c7cf-11e9-b3c3-02423760b3e7]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/8aee4a5c-c7d2-11e9-9dc9-02423760b3e7]. Please set ROS_LOG_DIR to a writable location.
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://in_dev_docker:44204/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [157][0m
+[1mROS_MASTER_URI=http://in_dev_docker:11311/[0m
+]2;roscore http://in_dev_docker:11311/
+[1msetting /run_id to 8aee4a5c-c7d2-11e9-9dc9-02423760b3e7[0m
+[1mprocess[rosout-1]: started with pid [177][0m
+started core service [/rosout]
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+WARNING: cannot create log directory [/home/qwe/.ros/log/ef7a9ee8-c7d3-11e9-8c7a-28c2dd9b2713]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/35fffab6-c7d4-11e9-98aa-28c2dd9b2713]. Please set ROS_LOG_DIR to a writable location.
+[31mroscore cannot run as another roscore/master is already running. 
+Please kill other roscore/master processes before relaunching.
+The ROS_MASTER_URI is http://in_dev_docker:11311/[0m
+[31mThe traceback for the exception was written to the log file[0m
+... logging to /home/qwe/.ros/log/d5c51d54-c7db-11e9-8736-28c2dd9b2713/roslaunch-in_dev_docker-137.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://in_dev_docker:43951/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+WARNING: cannot create log directory [/home/qwe/.ros/log/dd4d0f64-c85d-11e9-b424-02424dadbc85]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/71b6fe1c-c863-11e9-a005-02424dadbc85]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/8cdd2bd4-c864-11e9-8a65-02424dadbc85]. Please set ROS_LOG_DIR to a writable location.
+WARNING: cannot create log directory [/home/qwe/.ros/log/61a67cb4-c89f-11e9-945b-28c2dd9b2713]. Please set ROS_LOG_DIR to a writable location.
+[31mroscore cannot run as another roscore/master is already running. 
+Please kill other roscore/master processes before relaunching.
+The ROS_MASTER_URI is http://in_dev_docker:11311/[0m
+[31mThe traceback for the exception was written to the log file[0m
+... logging to /home/qwe/.ros/log/5f34164c-c8a1-11e9-a887-28c2dd9b2713/roslaunch-in_dev_docker-139.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://in_dev_docker:45375/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+... logging to /home/qwe/.ros/log/5f34164c-c8a1-11e9-a887-28c2dd9b2713/roslaunch-qwe-N551JW-1858.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+[1mstarted roslaunch server http://qwe-N551JW:43806/[0m
+ros_comm version 1.11.21
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [1872][0m
+[1mROS_MASTER_URI=http://qwe-N551JW:11311/[0m
+]2;roscore http://qwe-N551JW:11311/
+[1msetting /run_id to 5f34164c-c8a1-11e9-a887-28c2dd9b2713[0m
+[1mprocess[rosout-1]: started with pid [1885][0m
+started core service [/rosout]
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+WARNING: cannot create log directory [/home/qwe/.ros/log/31aa1eaa-c8a2-11e9-b3ac-28c2dd9b2713]. Please set ROS_LOG_DIR to a writable location.

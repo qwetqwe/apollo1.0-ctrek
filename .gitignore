@@ -1,0 +1,9 @@
+third_party/ros_aarch64
+third_party/ros_x86_64
+controlcan
+bazel-apollo
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-testlogs
+*~
