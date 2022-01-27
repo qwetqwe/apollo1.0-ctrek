@@ -6109,9 +6109,9 @@ three-obj-loader@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/three-obj-loader/-/three-obj-loader-1.1.2.tgz#d2c0e30a1acfdb344eac014375594429a0e25a53"
 
-three@~0.84.0:
-  version "0.84.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.84.0.tgz#95be85a55a0fa002aa625ed559130957dcffd918"
+three@~0.137.0:
+  version "0.137.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.137.0.tgz#0ebd6ba66637a332c31f234bcdd35aeec071a6e3"
 
 throttleit@^1.0.0:
   version "1.0.0"
